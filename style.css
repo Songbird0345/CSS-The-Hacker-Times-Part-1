@@ -39,6 +39,9 @@ h5 {
 nav {
     border-top: solid 2px #d6d6d6;
     border-bottom: solid 2px #d6d6d6;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 nav a{
     color:#777;
@@ -53,16 +56,19 @@ li {
 .more-articles p {
     width: 19.5em;
     padding: 5px;
+    border-bottom: #d6d6d6;
 }
 
 section {
     display: inline-block;
     text-align: justify;
     padding: 5px;
+
 }
 .three-articles p{
     width: 25em;
     padding-left: 10px;
+
 }
 span {
     display: inline-block;
@@ -71,17 +77,14 @@ span {
     font-size: 8px;
 }
 footer {
-    background-color: white;
+    background-color: #d6d6d6;
     width: 700px;
     border-radius: 5px;
     box-shadow: #777;
     padding: 25px;
     border-top: solid 2px #d6d6d6;
-}
-#footer {
-    padding: 5px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 10px;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 td {
     width: 30%;
@@ -97,7 +100,41 @@ a:hover {
 a:visited {
     color: black;
 }
-#baby-names {
-    list-style-type: none;
-    display: block;
+
+.dropbtn {
+  background-color: #d6d6d6;
+  color: black;
+  padding: 16px;
+  font-size: 10px;
+  border: none;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 50px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d6d6d6;}
